@@ -5,6 +5,8 @@
 #include <arpa/inet.h>
 #include <string.h>
 #include <sys/epoll.h>
+#include <unistd.h>
+
 
 #define READ_BUFFER 1024
 #define MAX_EVENTS 1024
@@ -48,7 +50,7 @@ int main(){
 
                 int clnt_sockfd = accept(sockfd, (sockaddr*)&clnt_addr, &clnt_addr_len);
                 errif(clnt_sockfd == -1, "socket accept failed");
-                printf("new client fd %d! IP: %s Port: %d\n", clnt_sockfd, inet_ntoa(clnt_addr.sin_addr));
+                printf("new client fd %d! IP: %s Port: %d\n", clnt_sockfd, inet_ntoa(clnt_addr.sin_addr), ntohs(clnt_addr.sin_port));
 
                 bzero(&ev, sizeof(ev));
                 ev.data.fd = clnt_sockfd;
@@ -69,7 +71,7 @@ int main(){
                         printf("continue reading");
                         continue;
                     }
-                    else if(bytes_read == 1 && ((errno == EAGIN) || (errno == EWOULDBLOCK))){ //非阻塞IO，这个条件表示数据全部读取完毕
+                    else if(bytes_read == 1 && ((errno == EAGAIN) || (errno == EWOULDBLOCK))){ //非阻塞IO，这个条件表示数据全部读取完毕
                         printf("finish reading once, errno: %d\n", errno);
                         break;
                     }
