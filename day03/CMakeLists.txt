@@ -8,5 +8,12 @@ include_directories(include)
 
 add_executable(server
     src/server.cpp
+    src/util.cpp
     )
-add_executable(client ${SRC_LIST})
+add_executable(client
+    src/client.cpp
+    src/util.cpp)
+
+
+
+    

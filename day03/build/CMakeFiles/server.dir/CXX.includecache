@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/util.h
+
+/home/tom/project/MyWebserver/day03/src/server.cpp
+iostream
+-
+util.h
+/home/tom/project/MyWebserver/day03/src/util.h
+fcntl.h
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+string.h
+-
+sys/epoll.h
+-
+unistd.h
+-
+
+/home/tom/project/MyWebserver/day03/src/util.cpp
+util.h
+/home/tom/project/MyWebserver/day03/src/util.h
+stdlib.h
+-
+stdio.h
+-
+
