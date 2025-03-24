@@ -12,7 +12,7 @@ public:
     void bind(InetAddress*);
 
     void listen();
-    void setbonblocking();
+    void setnonblocking();
     int accept(InetAddress*);
     int getFd();
 };
