@@ -9,6 +9,8 @@
         "*.tcc": "cpp",
         "ostream": "cpp",
         "cmath": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "fstream": "cpp",
+        "cerrno": "cpp"
     }
 }
