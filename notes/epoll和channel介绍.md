@@ -86,14 +86,4 @@ timeout: 超时时间
 
 # channel基础介绍  
 
-# Reactor模式 
-
-# Proactor模式  
-![alt text](image.png)  
-介绍一下 Proactor 模式的工作流程：  
-Proactor Initiator 负责创建 Proactor 和 Handler 对象，并将 Proactor 和 Handler 都通过   
-Asynchronous Operation Processor 注册到内核；  
-Asynchronous Operation Processor 负责处理注册请求，并处理 I/O 操作;  
-Asynchronous Operation Processor 完成 I/O 操作后通知 Proactor；  
-Proactor 根据不同的事件类型回调不同的 Handler 进行业务处理；  
-Handler 完成业务处理；  
+ 

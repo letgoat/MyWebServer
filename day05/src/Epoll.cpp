@@ -1,10 +1,10 @@
-#include "Epoll.h"
-#include "util.h"
-#include "Channel.h"
+#include "../include/../include/Epoll.h"
+#include "../include/../include/util.h"
+#include "../include/Channel.h"
 #include <unistd.h>
 #include <string.h>
 
-#define MAX_EVENTS 1024
+#define MAX_EVENTS 1000
 
 Epoll::Epoll():epfd(-1), events(nullptr){
     epfd = epoll_create1(0);
