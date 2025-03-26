@@ -1,7 +1,7 @@
 # Reactor模式 
 ## 三种经典的Reactor模式：  
 ### 单Ractor单进程/线程  
-![alt text](image.png)
+![alt text](/home/tom/project/MyWebserver/notes/image.png)
 可以看到进程里有 Reactor、Acceptor、Handler 这三个对象：  
 
 Reactor 对象的作用是监听和分发事件；  
@@ -15,7 +15,7 @@ Reactor 对象通过 select （IO 多路复用接口） 监听事件，收到事
 ### 单Reactor多进程/线程  
 
 # Proactor模式  
-![alt text](image.png)  
+![alt text](/home/tom/project/MyWebserver/notes/image1.png)  
 介绍一下 Proactor 模式的工作流程：  
 Proactor Initiator 负责创建 Proactor 和 Handler 对象，并将 Proactor 和 Handler 都通过   
 Asynchronous Operation Processor 注册到内核；  
