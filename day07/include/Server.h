@@ -2,6 +2,7 @@
 
 class EventLoop;
 class Socket;
+class Channel;
 class Server{
 private:
     EventLoop* loop;
