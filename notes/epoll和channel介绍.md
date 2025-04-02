@@ -83,7 +83,15 @@ timeout: 超时时间
         - socket读触发：socket数据从无到有，会触发epoll_wait EPOLLIN事件，只会触发一次EPOLLIN事件，用户检测到事件后，需要一次性把socket接收缓冲区的数据全部读取完，读取完的标志未recv返回-1，errno设置为EAGAIN  
         - socket写触发：socket可写，会触发一次epoll_wait EPOLLOUT事件  
 
+## 6. epoll的原理和流程  
+### 6.1 创建epoll对象   
+进程调用epoll_create时，内核会创建一个eventpoll对象（也就是epfd*所代表的对象）  
+### 6.2 维护监视列表  
+
+### 6.3 接收数据  
+
 
 # channel基础介绍  
+Channel是网络框架中对epoll的抽象封装，其核心原理是通过文件描述符-事件-回调的三元绑定，将底层事件通知机制转化为面向对象的事件处理模型。这种设计简化了复杂的事件驱动模型，是Reactor模式的关键组件之一  
 
  
