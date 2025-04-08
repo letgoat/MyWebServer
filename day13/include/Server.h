@@ -13,11 +13,14 @@ private:
     std::map<int, Connection*> connections; //TCP连接
     std::vector<EventLoop*> subReactors; //负责处理事件循环
     ThreadPool* thpool; //线程池
+    std::function<void(Connection*)> on_connect_callback_; //连接回连函数
 public:
     Server(EventLoop*);
     ~Server();
 
     void handleReadEvent(int);
     void newConnection(Socket* sock);
-    void deleteConnection(int sockfd);
+    void deleteConnection(Socket* sock);
+
+    void OnConnection(std::function<void(Connection*)> fn);
 };

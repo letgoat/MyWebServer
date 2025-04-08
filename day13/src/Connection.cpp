@@ -78,8 +78,45 @@ void Connection::WriteNonBlocking(){
     char buf[send_buffer_->size()];
     memcpy(buf, send_buffer_->c_str(), send_buffer_->size()); //将send_buffer_中的数据复制到buffer中
     int data_size = send_buffer_->size();
-    int data_left = data_size;
+    int data_left = data_size; //data_left是剩余数据量
     while(data_left > 0){
-        
+        ssize_t bytes_write = write(sockfd, buf + data_size - data_left, data_left);
+        if(bytes_write == -1 && errno == EINTR){
+            printf("continue writing\n");
+            continue;
+        }
+        if(bytes_write == -1 && errno == EAGAIN){
+            break;
+        }
+        if(bytes_write == -1){
+            printf("other error on client fd %d\n", sockfd);
+            state_ = State::Closed;
+            break;
+        }
+        data_left -= bytes_write;
     }
 }
+
+void Connection::Close(){delete_connection_callback_(sock_);}
+
+
+Connection::State Connection::GetState(){return state_;}
+void Connection::SetSendBuffer(const char* str){send_buffer_->setBuf(str);}
+Buffer* Connection::GetReadBuffer(){return read_buffer_;}
+const char *Connection::ReadBuffer(){return read_buffer_->c_str();}
+Buffer* Connection::GetSendBuffer(){return send_buffer_;}
+const char* Connection::SendBuffer(){return send_buffer_->c_str();}
+
+void Connection::setDeleteConnectionCallback(std::function<void(Socket*)> const& callback){
+    delete_connection_callback_ = callback;
+}
+
+void Connection::setOnConnectionCallback(std::function<void(Connection*)> const& callback){
+    on_connection_callback_ = callback;
+    channel_->setReadCallback([this](){on_connection_callback_(this);});
+}
+
+void Connection::GetlineSendBuffer(){send_buffer_->getline();}
+
+Socket* Connection::GetSocket() const {return sock_;}
+

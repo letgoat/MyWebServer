@@ -24,7 +24,6 @@ public:
     void Write();
 
     State GetState();
-    void close();
     
     void setDeleteConnectionCallback(std::function<void(Socket*)> const &callback);
     void setOnConnectionCallback(std::function<void(Connection*)> const &callback);
@@ -37,7 +36,10 @@ public:
     void GetlineSendBuffer();
     Socket* GetSocket();
     
-    void Onconnection(std::function<void()> fn);
+    Socket* GetSocket() const;
+    void Close();
+
+    void OnConnect(std::function<void()> fn);
 
 private:
     EventLoop* loop_; //事件循环

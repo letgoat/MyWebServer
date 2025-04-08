@@ -14,6 +14,8 @@
 #include <errno.h>
 #include <thread>
 #include <future>
+#include <assert.h>
+
 
 
 #define READ_BUFFER 1024
@@ -55,26 +57,29 @@ void Server::handleReadEvent(int ){
 }
 
 void Server::newConnection(Socket* sock){
-    if(sock->getFd() != -1){
-        int random = sock->getFd() % subReactors.size();
-        Connection* conn = new Connection(subReactors[random], sock);
-        std::function<void(int)> cb = std::bind(&Server::deleteConnection, this, std::placeholders::_1);
-        conn->setDeleteConnectionCallback(cb);
-        connections[sock->getFd()] = conn;
+    assert(sock->getFd() != -1);
+    int random = sock->getFd() % subReactors.size();
+    Connection* conn = new Connection(subReactors[random], sock);
+    std::function<void(Socket *)> cb = std::bind(&Server::deleteConnection, this, std::placeholders::_1);
+    conn->setDeleteConnectionCallback(cb);
+    conn->setOnConnectionCallback(on_connect_callback_);
+    connections[sock->getFd()] = conn;
+}
+
+void Server::deleteConnection(Socket* sock){
+    int sockfd = sock->getFd();
+    auto it = connections.find(sockfd);
+    if(it != connections.end()){
+        Connection* conn = connections[sockfd];
+        connections.erase(sockfd);
+        delete conn;
+        conn = nullptr;
     }
 }
 
-void Server::deleteConnection(int sockfd){
-    if(sockfd != -1){
-        auto it = connections.find(sockfd);
-        if(it != connections.end()){
-            Connection* conn = connections[sockfd];
-            connections.erase(sockfd);
-            delete conn;
-        }
-    }
+void Server::OnConnection(std::function<void(Connection*)> fn){
+    on_connect_callback_ = std::move(fn);
 }
-
 
 
 
