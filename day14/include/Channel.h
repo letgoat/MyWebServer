@@ -2,26 +2,34 @@
 
 #include "common.h"
 
-class EventLoop;
 class Channel{
 public:
     DISALLOW_COPY_AND_MOVE(Channel);
-    Channel(int fd, EventLoop* loop);
+    Channel(int fd, Eventloop* loop);
 
     ~Channel();
 
-    void handleEvent() const; //处理事件
-    void EnableRead();
-    void EnableWrite();
-    void EnableET();
+    void HandleEvent() const; //处理事件
+    void EnableRead(); //允许读
+    void EnableWrite(); //允许写
+    void EnableET(); //以ET形式触发
     void DisableWrite();
 
-    int fd() const;
-    short listen_events() const;
-    short ready_events() const;
+    int fd() const; //获取fd
+    short listen_events() const; //监听的事件
+    short ready_events() const; //准备好的事件
 
-    bool IsInEpoll() const;
-    void SetInEpoll(bool in = true);
+    bool IsInEpoll() const; //判断当前channel是否在poller中
+    void SetInEpoll(bool in = true); //设置当前状态为poller中
 
-    void SetReadyEvents(int ev);
-};
+    void SetReadyEvents(int ev); //设置准备好的事件
+    void set_read_callback(std::function<void()> const &callback); //设置回调函数
+    void set_write_callback(std::function<void()> const &callback);
+
+private:
+    int fd_;
+    EventLoop *loop_;
+
+    
+
+}
