@@ -11,6 +11,23 @@ class Acceptor{
 public:
     DISALLOW_COPY_AND_MOVE(Acceptor);
     Acceptor(EventLoop *loop, const char* ip, const int port);
+    ~Acceptor();
+
+    void set_new_connection_callback(std::function<void(int) const &callback);
+
+    //创建socket
+    void Create();
+
+    //与IP地址绑定
+    void Bind(const char* ip, const int port);
+
+    //监听socket
+    void Listen();
+
+    //接收连接
+    void AcceptConnection();
+ 
+    void new_connection_callback(std::function<void(int)> const &callback);
     
 private:
     EventLoop* loop_;
