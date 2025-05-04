@@ -13,3 +13,20 @@ void Buffer::set_buf(const char* buf){
     buf_.swap(new_buf);
 }
 
+size_t Buffer::Size() const{
+    return buf_.size();
+}
+
+void Buffer::Append(const char* _str, int _size){
+    for(int i = 0; i < _size; i++){
+        if(str[i] == '\0'){
+            break;
+        }
+        buf_.push_back(str[i]);
+    }
+}
+
+void Buffer::clear(){
+    buf_.clear();
+}
+
