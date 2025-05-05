@@ -34,7 +34,6 @@ public:
     void Read();
     void Write();
     void Send(const std::string& msg);
-    void Send(const char* msg, int len);
     void Send(const char* msg);
 
     void HandleMessage(); //当接收到信息时，进行回调

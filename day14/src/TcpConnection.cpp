@@ -51,3 +51,34 @@ void TcpConnection::Send(const std::string& msg){
     set_send_buf(msg.c_str());
     Write();
 }
+
+void TcpConnection::Send(const char* msg){
+    set_send_buf(msg);
+    Write();
+}
+
+void TcpConnection::Read(){
+    read_buf_->Clear();
+    ReadNonblocking();
+}
+
+void TcpConnection::Write(){
+    WriteNonBlocking();
+    send_buf_->Clear();
+}
+
+void TcpConnection::ReadNonBlocking(){
+    char buf[1024];
+    while(true){
+        memset(buf, 0, sizeof(buf));
+        ssize_t bytes_read = read(connfd_, buf, sizeof(buf));
+        if(bytes_read > 0){
+            read_buf_->Append(buf, bytes_read);
+        }
+        else if()
+    }
+}
+
+void HandleMessage(){
+
+}
