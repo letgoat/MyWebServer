@@ -75,10 +75,31 @@ void TcpConnection::ReadNonBlocking(){
         if(bytes_read > 0){
             read_buf_->Append(buf, bytes_read);
         }
-        else if()
+        else if(bytes_read == -1 && errno == EINTR){ //EINTR:interrupted system call
+            std::cout << "continue read" << std::endl;
+            continue;
+        }
+        else if(bytes_read == -1 && (errno == EAGAIN || errno == EWOULDBLOCK)){ //EAGAIN: try again
+            break;
+        }
+        else if(bytes_read == 0){
+            HandleClose();
+            break;
+        }
+        else{
+            HandleClose();
+            break;
+        }
     }
 }
 
-void HandleMessage(){
-
+void TcpConnection::WriteNonBlocking(){
+    char buf[send_buffer_->Size()];
+    memcpy(buf, send_buffer_->c_str(), send_buffer_->Size());
+    int data_size = send_buffer_->Size();
+    int data_left = data_size;
+    while(data_left > 0){
+        ssize_t bytes_write = write(connfd_, buf + (data_size - data_left), data_left);
+        if(bytes_write)
+    }
 }

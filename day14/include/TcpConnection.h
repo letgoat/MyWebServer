@@ -5,7 +5,7 @@
 
 #pragma once
 #include "common.h"
-
+#include <string.h>
 class Buffer;
 class TcpConnection{
 public:
