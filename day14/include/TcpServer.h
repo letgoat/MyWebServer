@@ -5,6 +5,7 @@
 #pragma once
 #include <common.h>
 #include <functional>
+#include <unordered_map>
 
 class TcpConnection;
 class Acceptor;
@@ -15,6 +16,17 @@ class TcpServer{
 public:
 
 private:
+    std::unique_ptr<EventLoop> main_reactor_;
+    std::vecotor<std::unique_ptr<Acceptor>> sub_reactors_;
+
+    int next_conn_id_;
+    std::unique_ptr<Acceptor> acceptor_;
+    std::unique_ptr<ThreadPool> thread_pool_;
+    std::unordered_map<int, TcpConnection*> connectionsMap_;
+    
+    
+    std::function<void(TcpConnection *)> on_connect_;
+    std::function<void(TcpConnection *)> on_message_;
 
 
 };
