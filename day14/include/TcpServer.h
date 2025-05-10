@@ -6,6 +6,8 @@
 #include <common.h>
 #include <functional>
 #include <unordered_map>
+#include <vector>
+#include <memory>
 
 class TcpConnection;
 class Acceptor;
@@ -14,10 +16,20 @@ class ThreadPool;
 
 class TcpServer{
 public:
+    DISALLOW_COPY_AND_MOVE(TcpServer);
+    TcpServer(const char* ip, const int port);
+    ~TcpServer();
+
+    void start();
+    void set_connection_callback(std::function<void(TcpConnection *)> const &fn);
+    void set_message_callback(std::function<void(TcpConnection *)> const &fn);
+
+    void HandleClose(int fd);
+    void HandleNewConnection(int fd);
 
 private:
     std::unique_ptr<EventLoop> main_reactor_;
-    std::vecotor<std::unique_ptr<Acceptor>> sub_reactors_;
+    std::vector<std::unique_ptr<Acceptor>> sub_reactors_;
 
     int next_conn_id_;
     std::unique_ptr<Acceptor> acceptor_;

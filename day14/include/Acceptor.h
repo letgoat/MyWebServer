@@ -4,6 +4,8 @@
 #pragma once
 #include "../include/common.h"
 
+#include <functional>
+#include <memory>
 class EventLoop;
 class Channel;
 
@@ -13,7 +15,7 @@ public:
     Acceptor(EventLoop *loop, const char* ip, const int port);
     ~Acceptor();
 
-    void set_new_connection_callback(std::function<void(int) const &callback);
+    void set_new_connection_callback(std::function<void(int)> const &callback);
 
     //创建socket
     void Create();

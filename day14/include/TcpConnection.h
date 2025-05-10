@@ -6,7 +6,13 @@
 #pragma once
 #include "common.h"
 #include <string.h>
+#include <functional>
+#include <string>
+#include <memory>
+
 class Buffer;
+class EventLoop;
+class Channel;
 class TcpConnection{
 public:
     enum ConnectionState{

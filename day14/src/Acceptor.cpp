@@ -1,7 +1,9 @@
 #include "../include/Acceptor.h"
+#include <iostream>
 #include <assert.h>
 #include <sys/socket.h>
 #include <sys/ioctl.h>
+#include <string>
 
 Acceptor::Acceptor(EventLoop* loop, const char* ip, const int port):loop_(loop), listenfd_(-1){
 
@@ -12,7 +14,7 @@ Acceptor::~Acceptor(){
 
 void Acceptor::Create(){
     assert(listenfd_ == -1); //避免重复创建
-    listenfd_ = socket(AF_INET, SOCK_STREAM | SOCK_NONBLOCK | SOCK_CLOEXEC 0);
+    listenfd_ = socket(AF_INET, SOCK_STREAM | SOCK_NONBLOCK | SOCK_CLOEXEC , 0);
     if(listenfd_ == -1){
         std::cout << "create socket error" << std::endl;
     }

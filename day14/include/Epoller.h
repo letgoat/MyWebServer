@@ -1,7 +1,7 @@
 //主要是进行多路复用，保证高并发
 //在Epoller类主要是对epoll中channel的监听和处理
 
-#pargma once
+#pragma once
 #include "common.h"
 #include <vector>
 
