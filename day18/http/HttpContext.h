@@ -23,6 +23,9 @@ enum HttpRequestParaseState{
 
     BEFORE_URL_PARAM_KEY, //URL请求参数键之前
     URL_PARAM_KEY, //URL请求参数键
+    BEFORE_URL_PARAM_VALUE, //URL请求参数值之前
+    URL_PARAM_VALUE, //URL请求参数值
+    
 
     BEFORE_PROTOCOL, //协议解析之前
     PROTOCOL,        //协议
@@ -42,6 +45,8 @@ enum HttpRequestParaseState{
 
     CR_LF,   //回车换行
 
+    CR_LF_CR, //回车换行后的状态
+
     BODY,    //请求体
 
     COMPLETE, //解析完成
@@ -53,9 +58,9 @@ public:
     ~HttpContext();
 
     bool ParseRequest(const char* begin, int size);
-    bool GetCompleteRequest();
+    bool GetCompleteRequest(); //获取请求是否解析完成
     HttpRequest* request();
-    void ResetContextStatus();
+    void ResetContextState(); //
 
 private:
     std::unique_ptr<HttpRequest> request_;

@@ -2,7 +2,7 @@
 #include <string>
 #include <map>
 
-class HttpRequest{
+class HttpRequest{  
 public:
     enum Method{
         kInvaild = 0,
@@ -36,6 +36,13 @@ public:
     void SetRequestParams(const std::string &key, const std::string &value); //设置请求参数
     std::string GetRequestValue(const std::string& key) const; //获取请求值
     const std::map<std::string, std::string> & headers() const; //获取请求头
+
+    void SetProtocol(const std::string& str); //设置协议
+    const std::string& protocol() const; //获取协议
+
+    void AddHeader(const std::string& key, const std::string& value); //添加请求头
+    std::string GetHeader(const std::string& field) const;
+    const std::map<std::string, std::string> & header() const; 
 
     void SetBody(const std::string &str); //设置请求体
     const std::string& body() const; //获取请求体
