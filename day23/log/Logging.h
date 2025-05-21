@@ -55,7 +55,7 @@ public:
 
     //全局方法，设置日志级别，flush输出到目的地
     static LogLevel loglevel();
-    static void setLoglevel(LogLevel level);
+    static void SetLogLevel(LogLevel level);
 
     typedef void (*OutputFunc)(const char* data, int len); //设置函数指针
     typedef void (*FlushFunc)();

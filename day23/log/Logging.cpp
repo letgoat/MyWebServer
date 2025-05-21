@@ -1,5 +1,7 @@
-//该文件存在1个class: Template
+//该文件存在1个新class: Template
 //Template: 用于封装一个已知长度的字符串，方便LogStream处理
+
+
 #include "Logging.h"
 
 #include "CurrentThread.h"
@@ -73,3 +75,88 @@ void Logger::Impl::FormattedTime(){
     Fmt us(".%06dZ", micro_seconds);
     stream_ << Template(t_time, 17) << Template(us.data(), 9);
 }
+
+//输出 源文件 和 行号
+void Logger::Impl::Finish(){
+    stream_ << " - " << sourcefile_.data_ << ":" << line_ << "\n";
+}
+
+LogStream& Logger::Impl::stream(){
+    return stream_;
+}
+
+const char* Logger::Impl::loglevel() const{
+    switch(level_){
+        case DEBUG:
+            return "DEBUG";
+        case INFO:
+            return "INFO";
+        case WARN:
+            return "WARN";
+        case ERROR:
+            return "ERROR";
+        case FATAL:
+            return "FATAL";
+        default:
+            return "UNKNOWN";
+    }
+    return nullptr;
+}
+
+//下面两个函数defaultOutput和defaultFlush不是成员函数
+
+//默认输出函数
+void defaultOutput(const char* msg, int len){
+    fwrite(msg, 1, len, stdout); //默认输出到stdout: 将长度为len, 每个数据代销为1字节的msg输出到stdout流
+}
+
+//默认刷新函数
+void defaultFlush(){
+    fflush(stdout); //默认flush到stdout
+}
+
+//定义默认值
+Logger::OutputFunc g_output = defaultOutput;
+Logger::FlushFunc g_flush = defaultFlush;
+Logger::LogLevel g_loglevel = Logger::INFO;
+
+Logger::Logger(const char* file, int line, LogLevel level):
+    impl_(level, SourceFile(file), line){
+}
+
+Logger::Logger(const char* file, int line, LogLevel level, const char* func):
+    impl_(level, SourceFile(file), line){
+}
+
+Logger::~Logger(){
+    //补足源码位置和行数
+    impl_.Finish();
+    //获取缓冲区
+    const LogStream::Buffer& buf(stream().buffer());
+    //默认输出到stdout
+    g_output(buf.data(), buf.length());
+
+    //当日志级别为FATAL时，flush设备缓冲区并终止程序
+    if(impl_.level_ == FATAL){
+        g_flush(); //刷新输出缓冲区，确保所有缓存的日志消息都被输出
+        abort(); //终止程序
+    }
+}
+
+LogStream& Logger::stream(){
+    return impl_.stream();
+}
+
+void Logger::SetOutput(OutputFunc func){
+    g_output = func;
+}
+
+
+void Logger::SetFlush(FlushFunc func){
+    g_flush = func;
+}
+
+void Logger::SetLogLevel(LogLevel level){
+    g_loglevel = level;
+}
+

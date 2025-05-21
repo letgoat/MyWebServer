@@ -104,11 +104,11 @@ LogStream& LogStream:: operator<<(unsigned long long num){
 }
 
 //将浮点类型数据转换成字符串
-LogStream& LogStream:: operator<<(const float& num){
+LogStream& LogStream::operator<<(const float& num){
     return (*this) << static_cast<double>(num);
 }
 
-LogStream& LogStream:: operator<<(const double& num){
+LogStream& LogStream::operator<<(const double& num){
     char buf[32];
     int len = snprintf(buf, sizeof(buf), "%g", num);
     buffer_.append(buf, len);
