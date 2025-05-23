@@ -51,5 +51,6 @@ void AsyncLogging::Append(const char* data, int len){
 
 
 void AsyncLogging::ThreadFunc(){
+    //创建成功，提醒主线程
     
 }
