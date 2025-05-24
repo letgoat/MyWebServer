@@ -1,4 +1,6 @@
 #include "AsyncLogging.h"
+#include <memory>
+#include "LogFile.h"
 
 AsyncLogging::AsyncLogging(const char* filepath):
     running_(false), filepath_(filepath), latch_(1){
@@ -52,5 +54,10 @@ void AsyncLogging::Append(const char* data, int len){
 
 void AsyncLogging::ThreadFunc(){
     //创建成功，提醒主线程
-    
+    latch_.notify();
+
+    std::unique_ptr<LogStream::Buffer> new_current_ = std::make_unique<LogStream::Buffer>();
+    std::unique_ptr<LogStream::Buffer> new_next_ = std::make_unique<LogStream::Buffer>();
+
+    std::unique_ptr<LogFile> logfile = std::make_unique<LogFile>();
 }

@@ -24,7 +24,7 @@ private:
     std::thread thread_;
 
     std::unique_ptr<LogStream::Buffer> current_; //当前的缓存
-    std::unique_ptr<LogStream::Buffer> next_; //空闲的缓存
+    std::unique_ptr<LogStream::Buffer> next_; //空闲的缓存(备用)
     std::vector<std::unique_ptr<LogStream::Buffer>> buffers_; //已满的缓冲区
 
 public:
