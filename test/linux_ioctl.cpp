@@ -75,6 +75,7 @@ int main(int argc, char* argv[])
 	while (true)
 	{
 		exist_invalid_fd = false;
+		//poll函数，返回 <0: 异常   返回 > 0: 就绪的事件数   返回 =0：超时
 		n = poll(&fds[0], fds.size(), 1000);
 		if (n < 0)
 		{
