@@ -6,6 +6,8 @@
 #include <mutex>
 #include <functional>
 #include <condition_variable>
+#include <future>
+
 
 class ThreadPool{
 private:
@@ -18,5 +20,8 @@ public:
     ThreadPool(int size = 10);
     ~ThreadPool();
 
-    void add(std::function<void()>);
+    template<class F, class... Args>
+    auto add(F&& f, Args&&... args)
+    -> std::future<typename std::result_of<F(Args...)>::type>;
 };
+
