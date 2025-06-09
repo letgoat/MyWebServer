@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tom/project/30daysCppWebServer/code/day29
+CMAKE_SOURCE_DIR = /home/tom/project/MyWebserver/ceremonial/day29
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tom/project/30daysCppWebServer/code/day29/build
+CMAKE_BINARY_DIR = /home/tom/project/MyWebserver/ceremonial/day29/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_context.dir/depend.make
@@ -59,276 +59,276 @@ include CMakeFiles/test_context.dir/flags.make
 
 CMakeFiles/test_context.dir/test/test_httpcontext.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/test/test_httpcontext.cpp.o: ../test/test_httpcontext.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_context.dir/test/test_httpcontext.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/test/test_httpcontext.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/test/test_httpcontext.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_context.dir/test/test_httpcontext.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/test/test_httpcontext.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/test/test_httpcontext.cpp
 
 CMakeFiles/test_context.dir/test/test_httpcontext.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/test/test_httpcontext.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/test/test_httpcontext.cpp > CMakeFiles/test_context.dir/test/test_httpcontext.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/test/test_httpcontext.cpp > CMakeFiles/test_context.dir/test/test_httpcontext.cpp.i
 
 CMakeFiles/test_context.dir/test/test_httpcontext.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/test/test_httpcontext.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/test/test_httpcontext.cpp -o CMakeFiles/test_context.dir/test/test_httpcontext.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/test/test_httpcontext.cpp -o CMakeFiles/test_context.dir/test/test_httpcontext.cpp.s
 
 CMakeFiles/test_context.dir/base/CurrentThread.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/base/CurrentThread.cpp.o: ../base/CurrentThread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_context.dir/base/CurrentThread.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/base/CurrentThread.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/base/CurrentThread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_context.dir/base/CurrentThread.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/base/CurrentThread.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/base/CurrentThread.cpp
 
 CMakeFiles/test_context.dir/base/CurrentThread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/base/CurrentThread.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/base/CurrentThread.cpp > CMakeFiles/test_context.dir/base/CurrentThread.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/base/CurrentThread.cpp > CMakeFiles/test_context.dir/base/CurrentThread.cpp.i
 
 CMakeFiles/test_context.dir/base/CurrentThread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/base/CurrentThread.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/base/CurrentThread.cpp -o CMakeFiles/test_context.dir/base/CurrentThread.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/base/CurrentThread.cpp -o CMakeFiles/test_context.dir/base/CurrentThread.cpp.s
 
 CMakeFiles/test_context.dir/tcp/Acceptor.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/tcp/Acceptor.cpp.o: ../tcp/Acceptor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_context.dir/tcp/Acceptor.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/tcp/Acceptor.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/tcp/Acceptor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_context.dir/tcp/Acceptor.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/tcp/Acceptor.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/tcp/Acceptor.cpp
 
 CMakeFiles/test_context.dir/tcp/Acceptor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/tcp/Acceptor.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/tcp/Acceptor.cpp > CMakeFiles/test_context.dir/tcp/Acceptor.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/tcp/Acceptor.cpp > CMakeFiles/test_context.dir/tcp/Acceptor.cpp.i
 
 CMakeFiles/test_context.dir/tcp/Acceptor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/tcp/Acceptor.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/tcp/Acceptor.cpp -o CMakeFiles/test_context.dir/tcp/Acceptor.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/tcp/Acceptor.cpp -o CMakeFiles/test_context.dir/tcp/Acceptor.cpp.s
 
 CMakeFiles/test_context.dir/tcp/Buffer.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/tcp/Buffer.cpp.o: ../tcp/Buffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test_context.dir/tcp/Buffer.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/tcp/Buffer.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/tcp/Buffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test_context.dir/tcp/Buffer.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/tcp/Buffer.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/tcp/Buffer.cpp
 
 CMakeFiles/test_context.dir/tcp/Buffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/tcp/Buffer.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/tcp/Buffer.cpp > CMakeFiles/test_context.dir/tcp/Buffer.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/tcp/Buffer.cpp > CMakeFiles/test_context.dir/tcp/Buffer.cpp.i
 
 CMakeFiles/test_context.dir/tcp/Buffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/tcp/Buffer.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/tcp/Buffer.cpp -o CMakeFiles/test_context.dir/tcp/Buffer.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/tcp/Buffer.cpp -o CMakeFiles/test_context.dir/tcp/Buffer.cpp.s
 
 CMakeFiles/test_context.dir/tcp/Channel.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/tcp/Channel.cpp.o: ../tcp/Channel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test_context.dir/tcp/Channel.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/tcp/Channel.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/tcp/Channel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test_context.dir/tcp/Channel.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/tcp/Channel.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/tcp/Channel.cpp
 
 CMakeFiles/test_context.dir/tcp/Channel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/tcp/Channel.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/tcp/Channel.cpp > CMakeFiles/test_context.dir/tcp/Channel.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/tcp/Channel.cpp > CMakeFiles/test_context.dir/tcp/Channel.cpp.i
 
 CMakeFiles/test_context.dir/tcp/Channel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/tcp/Channel.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/tcp/Channel.cpp -o CMakeFiles/test_context.dir/tcp/Channel.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/tcp/Channel.cpp -o CMakeFiles/test_context.dir/tcp/Channel.cpp.s
 
 CMakeFiles/test_context.dir/tcp/Epoller.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/tcp/Epoller.cpp.o: ../tcp/Epoller.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test_context.dir/tcp/Epoller.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/tcp/Epoller.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/tcp/Epoller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test_context.dir/tcp/Epoller.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/tcp/Epoller.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/tcp/Epoller.cpp
 
 CMakeFiles/test_context.dir/tcp/Epoller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/tcp/Epoller.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/tcp/Epoller.cpp > CMakeFiles/test_context.dir/tcp/Epoller.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/tcp/Epoller.cpp > CMakeFiles/test_context.dir/tcp/Epoller.cpp.i
 
 CMakeFiles/test_context.dir/tcp/Epoller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/tcp/Epoller.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/tcp/Epoller.cpp -o CMakeFiles/test_context.dir/tcp/Epoller.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/tcp/Epoller.cpp -o CMakeFiles/test_context.dir/tcp/Epoller.cpp.s
 
 CMakeFiles/test_context.dir/tcp/EventLoop.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/tcp/EventLoop.cpp.o: ../tcp/EventLoop.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test_context.dir/tcp/EventLoop.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/tcp/EventLoop.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/tcp/EventLoop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test_context.dir/tcp/EventLoop.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/tcp/EventLoop.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/tcp/EventLoop.cpp
 
 CMakeFiles/test_context.dir/tcp/EventLoop.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/tcp/EventLoop.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/tcp/EventLoop.cpp > CMakeFiles/test_context.dir/tcp/EventLoop.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/tcp/EventLoop.cpp > CMakeFiles/test_context.dir/tcp/EventLoop.cpp.i
 
 CMakeFiles/test_context.dir/tcp/EventLoop.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/tcp/EventLoop.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/tcp/EventLoop.cpp -o CMakeFiles/test_context.dir/tcp/EventLoop.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/tcp/EventLoop.cpp -o CMakeFiles/test_context.dir/tcp/EventLoop.cpp.s
 
 CMakeFiles/test_context.dir/tcp/EventLoopThread.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/tcp/EventLoopThread.cpp.o: ../tcp/EventLoopThread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test_context.dir/tcp/EventLoopThread.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/tcp/EventLoopThread.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/tcp/EventLoopThread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test_context.dir/tcp/EventLoopThread.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/tcp/EventLoopThread.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/tcp/EventLoopThread.cpp
 
 CMakeFiles/test_context.dir/tcp/EventLoopThread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/tcp/EventLoopThread.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/tcp/EventLoopThread.cpp > CMakeFiles/test_context.dir/tcp/EventLoopThread.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/tcp/EventLoopThread.cpp > CMakeFiles/test_context.dir/tcp/EventLoopThread.cpp.i
 
 CMakeFiles/test_context.dir/tcp/EventLoopThread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/tcp/EventLoopThread.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/tcp/EventLoopThread.cpp -o CMakeFiles/test_context.dir/tcp/EventLoopThread.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/tcp/EventLoopThread.cpp -o CMakeFiles/test_context.dir/tcp/EventLoopThread.cpp.s
 
 CMakeFiles/test_context.dir/tcp/EventLoopThreadPool.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/tcp/EventLoopThreadPool.cpp.o: ../tcp/EventLoopThreadPool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/test_context.dir/tcp/EventLoopThreadPool.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/tcp/EventLoopThreadPool.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/tcp/EventLoopThreadPool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/test_context.dir/tcp/EventLoopThreadPool.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/tcp/EventLoopThreadPool.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/tcp/EventLoopThreadPool.cpp
 
 CMakeFiles/test_context.dir/tcp/EventLoopThreadPool.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/tcp/EventLoopThreadPool.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/tcp/EventLoopThreadPool.cpp > CMakeFiles/test_context.dir/tcp/EventLoopThreadPool.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/tcp/EventLoopThreadPool.cpp > CMakeFiles/test_context.dir/tcp/EventLoopThreadPool.cpp.i
 
 CMakeFiles/test_context.dir/tcp/EventLoopThreadPool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/tcp/EventLoopThreadPool.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/tcp/EventLoopThreadPool.cpp -o CMakeFiles/test_context.dir/tcp/EventLoopThreadPool.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/tcp/EventLoopThreadPool.cpp -o CMakeFiles/test_context.dir/tcp/EventLoopThreadPool.cpp.s
 
 CMakeFiles/test_context.dir/tcp/TcpConnection.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/tcp/TcpConnection.cpp.o: ../tcp/TcpConnection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/test_context.dir/tcp/TcpConnection.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/tcp/TcpConnection.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/tcp/TcpConnection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/test_context.dir/tcp/TcpConnection.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/tcp/TcpConnection.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/tcp/TcpConnection.cpp
 
 CMakeFiles/test_context.dir/tcp/TcpConnection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/tcp/TcpConnection.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/tcp/TcpConnection.cpp > CMakeFiles/test_context.dir/tcp/TcpConnection.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/tcp/TcpConnection.cpp > CMakeFiles/test_context.dir/tcp/TcpConnection.cpp.i
 
 CMakeFiles/test_context.dir/tcp/TcpConnection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/tcp/TcpConnection.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/tcp/TcpConnection.cpp -o CMakeFiles/test_context.dir/tcp/TcpConnection.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/tcp/TcpConnection.cpp -o CMakeFiles/test_context.dir/tcp/TcpConnection.cpp.s
 
 CMakeFiles/test_context.dir/tcp/TcpServer.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/tcp/TcpServer.cpp.o: ../tcp/TcpServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/test_context.dir/tcp/TcpServer.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/tcp/TcpServer.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/tcp/TcpServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/test_context.dir/tcp/TcpServer.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/tcp/TcpServer.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/tcp/TcpServer.cpp
 
 CMakeFiles/test_context.dir/tcp/TcpServer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/tcp/TcpServer.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/tcp/TcpServer.cpp > CMakeFiles/test_context.dir/tcp/TcpServer.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/tcp/TcpServer.cpp > CMakeFiles/test_context.dir/tcp/TcpServer.cpp.i
 
 CMakeFiles/test_context.dir/tcp/TcpServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/tcp/TcpServer.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/tcp/TcpServer.cpp -o CMakeFiles/test_context.dir/tcp/TcpServer.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/tcp/TcpServer.cpp -o CMakeFiles/test_context.dir/tcp/TcpServer.cpp.s
 
 CMakeFiles/test_context.dir/http/HttpContext.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/http/HttpContext.cpp.o: ../http/HttpContext.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/test_context.dir/http/HttpContext.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/http/HttpContext.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/http/HttpContext.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/test_context.dir/http/HttpContext.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/http/HttpContext.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/http/HttpContext.cpp
 
 CMakeFiles/test_context.dir/http/HttpContext.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/http/HttpContext.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/http/HttpContext.cpp > CMakeFiles/test_context.dir/http/HttpContext.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/http/HttpContext.cpp > CMakeFiles/test_context.dir/http/HttpContext.cpp.i
 
 CMakeFiles/test_context.dir/http/HttpContext.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/http/HttpContext.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/http/HttpContext.cpp -o CMakeFiles/test_context.dir/http/HttpContext.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/http/HttpContext.cpp -o CMakeFiles/test_context.dir/http/HttpContext.cpp.s
 
 CMakeFiles/test_context.dir/http/HttpRequest.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/http/HttpRequest.cpp.o: ../http/HttpRequest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/test_context.dir/http/HttpRequest.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/http/HttpRequest.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/http/HttpRequest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/test_context.dir/http/HttpRequest.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/http/HttpRequest.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/http/HttpRequest.cpp
 
 CMakeFiles/test_context.dir/http/HttpRequest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/http/HttpRequest.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/http/HttpRequest.cpp > CMakeFiles/test_context.dir/http/HttpRequest.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/http/HttpRequest.cpp > CMakeFiles/test_context.dir/http/HttpRequest.cpp.i
 
 CMakeFiles/test_context.dir/http/HttpRequest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/http/HttpRequest.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/http/HttpRequest.cpp -o CMakeFiles/test_context.dir/http/HttpRequest.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/http/HttpRequest.cpp -o CMakeFiles/test_context.dir/http/HttpRequest.cpp.s
 
 CMakeFiles/test_context.dir/http/HttpResponse.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/http/HttpResponse.cpp.o: ../http/HttpResponse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/test_context.dir/http/HttpResponse.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/http/HttpResponse.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/http/HttpResponse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/test_context.dir/http/HttpResponse.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/http/HttpResponse.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/http/HttpResponse.cpp
 
 CMakeFiles/test_context.dir/http/HttpResponse.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/http/HttpResponse.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/http/HttpResponse.cpp > CMakeFiles/test_context.dir/http/HttpResponse.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/http/HttpResponse.cpp > CMakeFiles/test_context.dir/http/HttpResponse.cpp.i
 
 CMakeFiles/test_context.dir/http/HttpResponse.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/http/HttpResponse.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/http/HttpResponse.cpp -o CMakeFiles/test_context.dir/http/HttpResponse.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/http/HttpResponse.cpp -o CMakeFiles/test_context.dir/http/HttpResponse.cpp.s
 
 CMakeFiles/test_context.dir/http/HttpServer.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/http/HttpServer.cpp.o: ../http/HttpServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/test_context.dir/http/HttpServer.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/http/HttpServer.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/http/HttpServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/test_context.dir/http/HttpServer.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/http/HttpServer.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/http/HttpServer.cpp
 
 CMakeFiles/test_context.dir/http/HttpServer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/http/HttpServer.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/http/HttpServer.cpp > CMakeFiles/test_context.dir/http/HttpServer.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/http/HttpServer.cpp > CMakeFiles/test_context.dir/http/HttpServer.cpp.i
 
 CMakeFiles/test_context.dir/http/HttpServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/http/HttpServer.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/http/HttpServer.cpp -o CMakeFiles/test_context.dir/http/HttpServer.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/http/HttpServer.cpp -o CMakeFiles/test_context.dir/http/HttpServer.cpp.s
 
 CMakeFiles/test_context.dir/timer/Timer.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/timer/Timer.cpp.o: ../timer/Timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/test_context.dir/timer/Timer.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/timer/Timer.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/timer/Timer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/test_context.dir/timer/Timer.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/timer/Timer.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/timer/Timer.cpp
 
 CMakeFiles/test_context.dir/timer/Timer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/timer/Timer.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/timer/Timer.cpp > CMakeFiles/test_context.dir/timer/Timer.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/timer/Timer.cpp > CMakeFiles/test_context.dir/timer/Timer.cpp.i
 
 CMakeFiles/test_context.dir/timer/Timer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/timer/Timer.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/timer/Timer.cpp -o CMakeFiles/test_context.dir/timer/Timer.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/timer/Timer.cpp -o CMakeFiles/test_context.dir/timer/Timer.cpp.s
 
 CMakeFiles/test_context.dir/timer/TimerQueue.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/timer/TimerQueue.cpp.o: ../timer/TimerQueue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/test_context.dir/timer/TimerQueue.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/timer/TimerQueue.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/timer/TimerQueue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/test_context.dir/timer/TimerQueue.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/timer/TimerQueue.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/timer/TimerQueue.cpp
 
 CMakeFiles/test_context.dir/timer/TimerQueue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/timer/TimerQueue.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/timer/TimerQueue.cpp > CMakeFiles/test_context.dir/timer/TimerQueue.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/timer/TimerQueue.cpp > CMakeFiles/test_context.dir/timer/TimerQueue.cpp.i
 
 CMakeFiles/test_context.dir/timer/TimerQueue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/timer/TimerQueue.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/timer/TimerQueue.cpp -o CMakeFiles/test_context.dir/timer/TimerQueue.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/timer/TimerQueue.cpp -o CMakeFiles/test_context.dir/timer/TimerQueue.cpp.s
 
 CMakeFiles/test_context.dir/log/AsyncLogging.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/log/AsyncLogging.cpp.o: ../log/AsyncLogging.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/test_context.dir/log/AsyncLogging.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/log/AsyncLogging.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/log/AsyncLogging.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/test_context.dir/log/AsyncLogging.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/log/AsyncLogging.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/log/AsyncLogging.cpp
 
 CMakeFiles/test_context.dir/log/AsyncLogging.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/log/AsyncLogging.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/log/AsyncLogging.cpp > CMakeFiles/test_context.dir/log/AsyncLogging.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/log/AsyncLogging.cpp > CMakeFiles/test_context.dir/log/AsyncLogging.cpp.i
 
 CMakeFiles/test_context.dir/log/AsyncLogging.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/log/AsyncLogging.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/log/AsyncLogging.cpp -o CMakeFiles/test_context.dir/log/AsyncLogging.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/log/AsyncLogging.cpp -o CMakeFiles/test_context.dir/log/AsyncLogging.cpp.s
 
 CMakeFiles/test_context.dir/log/LogFile.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/log/LogFile.cpp.o: ../log/LogFile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/test_context.dir/log/LogFile.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/log/LogFile.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/log/LogFile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/test_context.dir/log/LogFile.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/log/LogFile.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/log/LogFile.cpp
 
 CMakeFiles/test_context.dir/log/LogFile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/log/LogFile.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/log/LogFile.cpp > CMakeFiles/test_context.dir/log/LogFile.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/log/LogFile.cpp > CMakeFiles/test_context.dir/log/LogFile.cpp.i
 
 CMakeFiles/test_context.dir/log/LogFile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/log/LogFile.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/log/LogFile.cpp -o CMakeFiles/test_context.dir/log/LogFile.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/log/LogFile.cpp -o CMakeFiles/test_context.dir/log/LogFile.cpp.s
 
 CMakeFiles/test_context.dir/log/LogStream.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/log/LogStream.cpp.o: ../log/LogStream.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/test_context.dir/log/LogStream.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/log/LogStream.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/log/LogStream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/test_context.dir/log/LogStream.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/log/LogStream.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/log/LogStream.cpp
 
 CMakeFiles/test_context.dir/log/LogStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/log/LogStream.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/log/LogStream.cpp > CMakeFiles/test_context.dir/log/LogStream.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/log/LogStream.cpp > CMakeFiles/test_context.dir/log/LogStream.cpp.i
 
 CMakeFiles/test_context.dir/log/LogStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/log/LogStream.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/log/LogStream.cpp -o CMakeFiles/test_context.dir/log/LogStream.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/log/LogStream.cpp -o CMakeFiles/test_context.dir/log/LogStream.cpp.s
 
 CMakeFiles/test_context.dir/log/Logging.cpp.o: CMakeFiles/test_context.dir/flags.make
 CMakeFiles/test_context.dir/log/Logging.cpp.o: ../log/Logging.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/test_context.dir/log/Logging.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/log/Logging.cpp.o -c /home/tom/project/30daysCppWebServer/code/day29/log/Logging.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/test_context.dir/log/Logging.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_context.dir/log/Logging.cpp.o -c /home/tom/project/MyWebserver/ceremonial/day29/log/Logging.cpp
 
 CMakeFiles/test_context.dir/log/Logging.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_context.dir/log/Logging.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/30daysCppWebServer/code/day29/log/Logging.cpp > CMakeFiles/test_context.dir/log/Logging.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tom/project/MyWebserver/ceremonial/day29/log/Logging.cpp > CMakeFiles/test_context.dir/log/Logging.cpp.i
 
 CMakeFiles/test_context.dir/log/Logging.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_context.dir/log/Logging.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/30daysCppWebServer/code/day29/log/Logging.cpp -o CMakeFiles/test_context.dir/log/Logging.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tom/project/MyWebserver/ceremonial/day29/log/Logging.cpp -o CMakeFiles/test_context.dir/log/Logging.cpp.s
 
 # Object files for target test_context
 test_context_OBJECTS = \
@@ -380,7 +380,7 @@ test/test_context: CMakeFiles/test_context.dir/log/LogStream.cpp.o
 test/test_context: CMakeFiles/test_context.dir/log/Logging.cpp.o
 test/test_context: CMakeFiles/test_context.dir/build.make
 test/test_context: CMakeFiles/test_context.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable test/test_context"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable test/test_context"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_context.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -393,6 +393,6 @@ CMakeFiles/test_context.dir/clean:
 .PHONY : CMakeFiles/test_context.dir/clean
 
 CMakeFiles/test_context.dir/depend:
-	cd /home/tom/project/30daysCppWebServer/code/day29/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tom/project/30daysCppWebServer/code/day29 /home/tom/project/30daysCppWebServer/code/day29 /home/tom/project/30daysCppWebServer/code/day29/build /home/tom/project/30daysCppWebServer/code/day29/build /home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles/test_context.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tom/project/MyWebserver/ceremonial/day29/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tom/project/MyWebserver/ceremonial/day29 /home/tom/project/MyWebserver/ceremonial/day29 /home/tom/project/MyWebserver/ceremonial/day29/build /home/tom/project/MyWebserver/ceremonial/day29/build /home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles/test_context.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test_context.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/tom/project/30daysCppWebServer/code/day29
+# Install script for directory: /home/tom/project/MyWebserver/ceremonial/day29
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tom/project/30daysCppWebServer/code/day29/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tom/project/MyWebserver/ceremonial/day29/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

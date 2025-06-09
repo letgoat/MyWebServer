@@ -6,5 +6,5 @@ CXX_FLAGS = -g -Wall -Werror -std=c++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/tom/project/30daysCppWebServer/code/day29/base -I/home/tom/project/30daysCppWebServer/code/day29/tcp -I/home/tom/project/30daysCppWebServer/code/day29/log -I/home/tom/project/30daysCppWebServer/code/day29/http -I/home/tom/project/30daysCppWebServer/code/day29/timer 
+CXX_INCLUDES = -I/home/tom/project/MyWebserver/ceremonial/day29/base -I/home/tom/project/MyWebserver/ceremonial/day29/tcp -I/home/tom/project/MyWebserver/ceremonial/day29/log -I/home/tom/project/MyWebserver/ceremonial/day29/http -I/home/tom/project/MyWebserver/ceremonial/day29/timer 
 

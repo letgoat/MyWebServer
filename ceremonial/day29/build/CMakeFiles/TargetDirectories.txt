@@ -1,6 +1,6 @@
-/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles/rebuild_cache.dir
-/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles/edit_cache.dir
-/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles/test_context.dir
-/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles/echoserver.dir
-/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles/test_logstream.dir
-/home/tom/project/30daysCppWebServer/code/day29/build/CMakeFiles/webserver.dir
+/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles/rebuild_cache.dir
+/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles/edit_cache.dir
+/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles/test_context.dir
+/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles/echoserver.dir
+/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles/test_logstream.dir
+/home/tom/project/MyWebserver/ceremonial/day29/build/CMakeFiles/webserver.dir
