@@ -98,13 +98,13 @@ inline Logger::LogLevel Logger::loglevel(){
 
 //日志宏
 #define LOG_DEBUG if(Logger::loglevel() <= Logger::DEBUG) \
-    Logger(_FILE_, _LINE_, Logger::DEBUG, _func_).stream()
+    Logger(___FILE___, __LINE__, Logger::DEBUG, _func_).stream()
 
 #define LOG_INFO if(Logger::loglevel() <= Logger::INFO) \
-    Logger(_FILE_, _LINE_, Logger::INFO).stream()
+    Logger(__FILE__, __LINE__, Logger::INFO).stream()
 
-#define LOG_WARN Logger(_FILE_, _LINE_, Logger::WARN).stream()
+#define LOG_WARN Logger(__FILE__, __LINE__, Logger::WARN).stream()
 
-#define LOG_ERROR Logger(_FILE_, _LINE_, Logger::ERROR).stream()
+#define LOG_ERROR Logger(__FILE__, __LINE__, Logger::ERROR).stream()
 
-#define LOG_FATAL Logger(_FILE_, _LINE_, Logger::FATAL).stream()
+#define LOG_FATAL Logger(__FILE__, __LINE__, Logger::FATAL).stream()

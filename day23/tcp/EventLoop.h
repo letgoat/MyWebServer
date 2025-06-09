@@ -10,6 +10,7 @@ class Epoller;
 class TimerQueue;
 class TimeStamp;
 class EventLoop
+class Channel
 {
 public:
     DISALLOW_COPY_AND_MOVE(EventLoop);

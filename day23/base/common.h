@@ -1,4 +1,4 @@
-#pragma
+#pragma once
 
 class Latch;
 
@@ -6,7 +6,7 @@ class Latch;
 //Macros to disable copying and moving
 #define DISALLOW_COPY(cname) \
     cname(const cname&) = delete; \
-    canme& operator=(const cname&) = delete;
+    cname& operator=(const cname&) = delete;
 
 #define DISALLOW_MOVE(cname) \
     cname(const cname&&) = delete; \

@@ -1,0 +1,3 @@
+/home/tom/project/MyWebserver/day23/build/CMakeFiles/rebuild_cache.dir
+/home/tom/project/MyWebserver/day23/build/CMakeFiles/edit_cache.dir
+/home/tom/project/MyWebserver/day23/build/CMakeFiles/webserver.dir
