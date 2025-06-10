@@ -15,11 +15,16 @@ Channel::~Channel() {
 }
 
 void Channel::HandleEvent() const{
-    if(tied_){
+    if(tied_){ //检查是否绑定
+        //尝试提升为强引用
         std::shared_ptr<void> guard = tie_.lock();
-        HandleEventWithGuard();
-    }else{
-        HandleEventWithGuard();
+        if(guard){ //对象仍然存在
+            HandleEventWithGuard(); //安全执行事件处理
+        }
+        // 如果对象已销毁，则不再处理事件
+    }
+    else{ // 未绑定，直接处理
+        HandleEventWithGuard(); //无需保护直接执行
     }
 }
 

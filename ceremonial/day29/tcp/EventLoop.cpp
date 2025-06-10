@@ -30,6 +30,9 @@ EventLoop::~EventLoop() {
     ::close(wakeup_fd_);
 }
 
+// 关键函数，事件循环
+// 通过Epoller的poll循环，返回活跃的Channel容器
+// 每一个活跃的Channel对象去处理自己的事件
 void EventLoop::Loop(){
     while (true)
     {

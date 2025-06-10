@@ -44,6 +44,6 @@ class Channel {
         std::function<void()> write_callback_;
 
         bool tied_;
-        std::weak_ptr<void> tie_;
+        std::weak_ptr<void> tie_; //void类型，这是类擦除技术，不在乎具体是什么对象，只关心对象是否存在
 
 };

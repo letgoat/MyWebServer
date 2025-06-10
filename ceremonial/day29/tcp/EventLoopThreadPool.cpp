@@ -11,11 +11,13 @@ EventLoopThreadPool::EventLoopThreadPool(EventLoop *loop)
 
 EventLoopThreadPool::~EventLoopThreadPool(){}
 
+
+//启动线程池
 void EventLoopThreadPool::start(){
-    for (int i = 0; i < thread_nums_; ++i){
+    for (int i = 0; i < thread_nums_; ++i){ 
         std::unique_ptr<EventLoopThread> ptr = std::make_unique<EventLoopThread>();
-        threads_.push_back(std::move(ptr));
-        loops_.push_back(threads_.back()->StartLoop());
+        threads_.push_back(std::move(ptr)); //将事件线程(EventLoopThread) 的 指针放入容器threads_中
+        loops_.push_back(threads_.back()->StartLoop()); //启动事件线程，并获取事件，放入loops_容器中
     }
 }
 

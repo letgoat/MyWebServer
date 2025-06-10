@@ -22,9 +22,11 @@ Epoller::~Epoller(){
     delete[] events_; 
 }
 
+// epoll_wait将发生的事件都一一传给Channel
+// 将活跃的Channel放入容器actvie_channels，并返回
 std::vector<Channel *> Epoller::Poll(long timeout) const{
     std::vector<Channel *> active_channels;
-    int nfds = epoll_wait(fd_, events_, MAX_EVENTS, timeout);
+    int nfds = epoll_wait(fd_, events_, MAX_EVENTS, timeout); //将发生的事件都放到events_数组中
     if(nfds == -1){ perror("epoll wait error"); }
     for (int i = 0; i < nfds; ++i){
         Channel *ch = (Channel *)events_[i].data.ptr;
