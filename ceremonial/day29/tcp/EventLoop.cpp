@@ -30,15 +30,17 @@ EventLoop::~EventLoop() {
     ::close(wakeup_fd_);
 }
 
-// 关键函数，事件循环
-// 通过Epoller的poll循环，返回活跃的Channel容器
-// 每一个活跃的Channel对象去处理自己的事件
+
+// I/O处理与业务逻辑解耦
 void EventLoop::Loop(){
     while (true)
-    {
+    {   //1.处理I/O事件(立即响应，短时间完成)
+        //由epoll等系统调用触发，仅在事件循环线程处理
         for (Channel *active_ch : poller_->Poll()){
             active_ch->HandleEvent();
         }
+        //2.处理任务事件(可延迟执行，允许耗时)
+        //可由任何线程提交(工作线程，其他事件循环等)
         DoToDoList();
     }
 }
@@ -58,6 +60,10 @@ void EventLoop::RunOneFunc(std::function<void()> cb){
     }
 }
 
+
+// EventLoop::QueueOneFunc 函数的主要功能是将一个回调函数添加到事件循环的任务队列中，
+// 并在当前线程不是事件循环线程的情况下，通过向 wakeup_fd_ 写入数据来唤醒事件循环线程，
+// 以便其处理新的任务。这使得任何线程都可以向事件循环提交任务，而不必担心线程同步问题。
 void EventLoop::QueueOneFunc(std::function<void()> cb){
     {
         // 加锁，保证线程同步
@@ -65,16 +71,26 @@ void EventLoop::QueueOneFunc(std::function<void()> cb){
         to_do_list_.emplace_back(std::move(cb));
     }
 
-    // 如果调用当前函数的并不是当前当前EventLoop对应的的线程，将其唤醒。主要用于关闭TcpConnection
-    // 由于关闭连接是由对应`TcpConnection`所发起的，但是关闭连接的操作应该由main_reactor所进行(为了释放ConnectionMap的所持有的TcpConnection)
-    if (!IsInLoopThread() || calling_functors_) {
-        uint64_t write_one_byte = 1;  
+    //main reactor线程和sub reactor线程都可能调用EventLoop
+
+    //条件!IsInLoopThread() --> 比如工作线程调用EventLoop::QueueOneFunc
+    //条件calling_functors_ --> 当前正在执行任务队列中的函数
+    if (!IsInLoopThread() || calling_functors_) { //如果不是当前事件循环线程或者正在执行其他任务，就需要唤醒事件循环线程来处理新的任务。
+        uint64_t write_one_byte = 1; // 向wakeup_fd_写入一个字节，唤醒事件循环线程
         ssize_t write_size = ::write(wakeup_fd_, &write_one_byte, sizeof(write_one_byte));
         (void) write_size;
         assert(write_size == sizeof(write_one_byte));
-    } 
+    }
 }
 
+
+// 该函数的实现理念：交换两个容器，将待执行的函数从to_do_list_中移动到functors中，然后执行functors中的函数。
+// 锁只保护数据交换，不保护执行
+// 性能考量：最小量化临界区，避免执行任务时阻塞其他线程
+// 安全防护：避免死锁，尤其避免递归添加新任务
+    //A获取锁，并执行B，B可能需要获取锁（修改任务列表to_do_list_)，导致死锁
+// 原子性保证：原子性保证，确保每轮处理的任务集是确定快照
+// 系统稳定性：防止任务无限积累导致事件循环饥饿
 void EventLoop::DoToDoList(){
     // 此时已经epoll_wait出来，可能存在阻塞在epoll_wait的可能性。
     calling_functors_ = true;
