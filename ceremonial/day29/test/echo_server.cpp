@@ -39,6 +39,7 @@ void EchoServer::onConnection(const std::shared_ptr<TcpConnection> & conn){
     int clnt_fd = conn->fd();
     struct sockaddr_in peeraddr;
     socklen_t peer_addrlength = sizeof(peeraddr);
+    //通过文件描述符clnt_fd获取对端(客户端)的地址信息
     getpeername(clnt_fd, (struct sockaddr *)&peeraddr, &peer_addrlength);
 
     std::cout << std::this_thread::get_id()

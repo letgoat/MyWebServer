@@ -72,6 +72,7 @@ public:
 private:
     template <typename T>
     void formatInteger(T value);
+
     Buffer buffer_;
 };
 
