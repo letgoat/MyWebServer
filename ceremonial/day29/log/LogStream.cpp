@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "../base/common.h"
 #include "LogStream.h"
 
 

@@ -15,7 +15,7 @@ stdio.h
 -
 
 ../base/Latch.h
-common.h
+../base/common.h
 ../base/common.h
 thread
 -
@@ -51,8 +51,8 @@ memory
 -
 stdio.h
 -
-common.h
-../http/common.h
+../base/common.h
+../base/common.h
 
 ../log/AsyncLogging.h
 vector
@@ -67,8 +67,8 @@ Logging.h
 ../log/Logging.h
 
 ../log/LogStream.h
-common.h
-../log/common.h
+../base/common.h
+../base/common.h
 string
 -
 algorithm
@@ -83,16 +83,16 @@ iostream
 ../log/Logging.h
 string.h
 -
-common.h
-../log/common.h
-TimeStamp.h
-../log/TimeStamp.h
+../base/common.h
+../base/common.h
+../timer/TimeStamp.h
+../timer/TimeStamp.h
 LogStream.h
 ../log/LogStream.h
 
 ../tcp/Acceptor.h
-common.h
-../tcp/common.h
+../base/common.h
+../base/common.h
 memory
 -
 functional
@@ -107,20 +107,20 @@ string
 -
 cstring
 -
-common.h
-../tcp/common.h
+../base/common.h
+../base/common.h
 
 ../tcp/Channel.h
-common.h
-../tcp/common.h
+../base/common.h
+../base/common.h
 functional
 -
 memory
 -
 
 ../tcp/EventLoop.h
-common.h
-../tcp/common.h
+../base/common.h
+../base/common.h
 memory
 -
 mutex
@@ -133,20 +133,20 @@ vector
 -
 
 ../tcp/TcpConnection.h
-common.h
-../tcp/common.h
+../base/common.h
+../base/common.h
 functional
 -
 memory
 -
 string
 -
-TimeStamp.h
-../tcp/TimeStamp.h
+../timer/TimeStamp.h
+../timer/TimeStamp.h
 
 ../tcp/TcpServer.h
-common.h
-../tcp/common.h
+../base/common.h
+../base/common.h
 functional
 -
 map
@@ -179,44 +179,12 @@ utility
 -
 functional
 -
-common.h
-../timer/common.h
+../base/common.h
+../base/common.h
 TimeStamp.h
 ../timer/TimeStamp.h
 
-/home/tom/project/MyWebserver/ceremonial/day29/base/CurrentThread.cpp
-CurrentThread.h
-/home/tom/project/MyWebserver/ceremonial/day29/base/CurrentThread.h
-sys/syscall.h
--
-stdio.h
--
-unistd.h
--
-
-/home/tom/project/MyWebserver/ceremonial/day29/base/CurrentThread.h
-stdint.h
--
-pthread.h
--
-stdio.h
--
-
-/home/tom/project/MyWebserver/ceremonial/day29/http/HttpContext.cpp
-HttpContext.h
-/home/tom/project/MyWebserver/ceremonial/day29/http/HttpContext.h
-HttpRequest.h
-/home/tom/project/MyWebserver/ceremonial/day29/http/HttpRequest.h
-memory
--
-string
--
-algorithm
--
-iostream
--
-cstring
--
+/home/tom/project/MyWebserver/ceremonial/day29/base/common.h
 
 /home/tom/project/MyWebserver/ceremonial/day29/http/HttpContext.h
 string
@@ -224,26 +192,10 @@ string
 memory
 -
 
-/home/tom/project/MyWebserver/ceremonial/day29/http/HttpRequest.cpp
-HttpRequest.h
 /home/tom/project/MyWebserver/ceremonial/day29/http/HttpRequest.h
 string
 -
 map
--
-iostream
--
-
-/home/tom/project/MyWebserver/ceremonial/day29/http/HttpRequest.h
-string
--
-map
--
-
-/home/tom/project/MyWebserver/ceremonial/day29/http/HttpResponse.cpp
-HttpResponse.h
-/home/tom/project/MyWebserver/ceremonial/day29/http/HttpResponse.h
-string
 -
 
 /home/tom/project/MyWebserver/ceremonial/day29/http/HttpResponse.h
@@ -295,8 +247,8 @@ memory
 -
 stdio.h
 -
-common.h
-/home/tom/project/MyWebserver/ceremonial/day29/http/common.h
+../base/common.h
+/home/tom/project/MyWebserver/ceremonial/day29/base/common.h
 
 /home/tom/project/MyWebserver/ceremonial/day29/log/AsyncLogging.cpp
 AsyncLogging.h
@@ -324,16 +276,6 @@ Latch.h
 Logging.h
 /home/tom/project/MyWebserver/ceremonial/day29/log/Logging.h
 
-/home/tom/project/MyWebserver/ceremonial/day29/log/LogFile.cpp
-LogFile.h
-/home/tom/project/MyWebserver/ceremonial/day29/log/LogFile.h
-TimeStamp.h
-/home/tom/project/MyWebserver/ceremonial/day29/log/TimeStamp.h
-string
--
-iostream
--
-
 /home/tom/project/MyWebserver/ceremonial/day29/log/LogFile.h
 stdio.h
 -
@@ -349,12 +291,14 @@ TimeStamp.h
 /home/tom/project/MyWebserver/ceremonial/day29/log/LogStream.cpp
 stdio.h
 -
+../base/common.h
+/home/tom/project/MyWebserver/ceremonial/day29/base/common.h
 LogStream.h
 /home/tom/project/MyWebserver/ceremonial/day29/log/LogStream.h
 
 /home/tom/project/MyWebserver/ceremonial/day29/log/LogStream.h
-common.h
-/home/tom/project/MyWebserver/ceremonial/day29/log/common.h
+../base/common.h
+/home/tom/project/MyWebserver/ceremonial/day29/base/common.h
 string
 -
 algorithm
@@ -377,10 +321,10 @@ utility
 /home/tom/project/MyWebserver/ceremonial/day29/log/Logging.h
 string.h
 -
-common.h
-/home/tom/project/MyWebserver/ceremonial/day29/log/common.h
-TimeStamp.h
-/home/tom/project/MyWebserver/ceremonial/day29/log/TimeStamp.h
+../base/common.h
+/home/tom/project/MyWebserver/ceremonial/day29/base/common.h
+../timer/TimeStamp.h
+/home/tom/project/MyWebserver/ceremonial/day29/timer/TimeStamp.h
 LogStream.h
 /home/tom/project/MyWebserver/ceremonial/day29/log/LogStream.h
 
@@ -419,8 +363,8 @@ iostream
 -
 
 /home/tom/project/MyWebserver/ceremonial/day29/tcp/Acceptor.h
-common.h
-/home/tom/project/MyWebserver/ceremonial/day29/tcp/common.h
+../base/common.h
+/home/tom/project/MyWebserver/ceremonial/day29/base/common.h
 memory
 -
 functional
@@ -445,8 +389,8 @@ string
 -
 cstring
 -
-common.h
-/home/tom/project/MyWebserver/ceremonial/day29/tcp/common.h
+../base/common.h
+/home/tom/project/MyWebserver/ceremonial/day29/base/common.h
 
 /home/tom/project/MyWebserver/ceremonial/day29/tcp/Channel.cpp
 Channel.h
@@ -463,8 +407,8 @@ utility
 -
 
 /home/tom/project/MyWebserver/ceremonial/day29/tcp/Channel.h
-common.h
-/home/tom/project/MyWebserver/ceremonial/day29/tcp/common.h
+../base/common.h
+/home/tom/project/MyWebserver/ceremonial/day29/base/common.h
 functional
 -
 memory
@@ -487,8 +431,8 @@ iostream
 -
 
 /home/tom/project/MyWebserver/ceremonial/day29/tcp/Epoller.h
-common.h
-/home/tom/project/MyWebserver/ceremonial/day29/tcp/common.h
+../base/common.h
+/home/tom/project/MyWebserver/ceremonial/day29/base/common.h
 vector
 -
 sys/epoll.h
@@ -521,8 +465,8 @@ assert.h
 -
 
 /home/tom/project/MyWebserver/ceremonial/day29/tcp/EventLoop.h
-common.h
-/home/tom/project/MyWebserver/ceremonial/day29/tcp/common.h
+../base/common.h
+/home/tom/project/MyWebserver/ceremonial/day29/base/common.h
 memory
 -
 mutex
@@ -547,8 +491,8 @@ condition_variable
 -
 
 /home/tom/project/MyWebserver/ceremonial/day29/tcp/EventLoopThread.h
-common.h
-/home/tom/project/MyWebserver/ceremonial/day29/tcp/common.h
+../base/common.h
+/home/tom/project/MyWebserver/ceremonial/day29/base/common.h
 mutex
 -
 thread
@@ -569,8 +513,8 @@ thread
 -
 
 /home/tom/project/MyWebserver/ceremonial/day29/tcp/EventLoopThreadPool.h
-common.h
-/home/tom/project/MyWebserver/ceremonial/day29/tcp/common.h
+../base/common.h
+/home/tom/project/MyWebserver/ceremonial/day29/base/common.h
 memory
 -
 thread
@@ -611,16 +555,16 @@ sys/sendfile.h
 -
 
 /home/tom/project/MyWebserver/ceremonial/day29/tcp/TcpConnection.h
-common.h
-/home/tom/project/MyWebserver/ceremonial/day29/tcp/common.h
+../base/common.h
+/home/tom/project/MyWebserver/ceremonial/day29/base/common.h
 functional
 -
 memory
 -
 string
 -
-TimeStamp.h
-/home/tom/project/MyWebserver/ceremonial/day29/tcp/TimeStamp.h
+../timer/TimeStamp.h
+/home/tom/project/MyWebserver/ceremonial/day29/timer/TimeStamp.h
 
 /home/tom/project/MyWebserver/ceremonial/day29/tcp/TcpServer.cpp
 TcpServer.h
@@ -647,8 +591,8 @@ iostream
 -
 
 /home/tom/project/MyWebserver/ceremonial/day29/tcp/TcpServer.h
-common.h
-/home/tom/project/MyWebserver/ceremonial/day29/tcp/common.h
+../base/common.h
+/home/tom/project/MyWebserver/ceremonial/day29/base/common.h
 functional
 -
 map
@@ -713,8 +657,8 @@ TimeStamp.h
 /home/tom/project/MyWebserver/ceremonial/day29/timer/Timer.h
 functional
 -
-common.h
-/home/tom/project/MyWebserver/ceremonial/day29/timer/common.h
+../base/common.h
+/home/tom/project/MyWebserver/ceremonial/day29/base/common.h
 TimeStamp.h
 /home/tom/project/MyWebserver/ceremonial/day29/timer/TimeStamp.h
 
@@ -753,8 +697,8 @@ utility
 -
 functional
 -
-common.h
-/home/tom/project/MyWebserver/ceremonial/day29/timer/common.h
+../base/common.h
+/home/tom/project/MyWebserver/ceremonial/day29/base/common.h
 TimeStamp.h
 /home/tom/project/MyWebserver/ceremonial/day29/timer/TimeStamp.h
 

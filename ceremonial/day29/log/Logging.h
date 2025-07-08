@@ -1,8 +1,8 @@
 #pragma once
 
 #include <string.h>
-#include "common.h"
-#include "TimeStamp.h"
+#include "../base/common.h"
+#include "../timer/TimeStamp.h"
 #include "LogStream.h"
 
 class Logger{
@@ -75,10 +75,31 @@ inline Logger::LogLevel Logger::logLevel(){
 
 
 // 日志宏
+#undef LOG_DEBUG
+#undef LOG_INFO
+#undef LOG_WARN
+#undef LOG_ERROR
+#undef LOG_FATAL
 #define LOG_DEBUG if (Logger::logLevel() <= Logger::DEBUG) \
-    Logger(__FILE__, __LINE__, Logger::DEBUG, __func__).stream()
+    Logger(__FILE__, __LINE__, Logger::DEBUG).stream()
 #define LOG_INFO if (Logger::logLevel() <= Logger::INFO) \
     Logger(__FILE__, __LINE__, Logger::INFO).stream()
-#define LOG_WARN Logger(__FILE__, __LINE__, Logger::WARN).stream()
-#define LOG_ERROR Logger(__FILE__, __LINE__, Logger::ERROR).stream()
-#define LOG_FATAL Logger(__FILE__, __LINE__, Logger::FATAL).stream()
+#define LOG_WARN if (Logger::logLevel() <= Logger::WARN) \
+    Logger(__FILE__, __LINE__, Logger::WARN).stream()
+#define LOG_ERROR if (Logger::logLevel() <= Logger::ERROR) \
+    Logger(__FILE__, __LINE__, Logger::ERROR).stream()
+#define LOG_FATAL if (Logger::logLevel() <= Logger::FATAL) \
+    Logger(__FILE__, __LINE__, Logger::FATAL).stream()
+
+// 以下是编译器常用的一些宏：
+// __FILE__: 当前源文件名的字符串
+// __LINE__: 当前源文件行号
+// __func__: 当前函数名的字符串
+// __DATE__: 编译日期的字符串
+// __TIME__：编译时间的字符串
+// __TIMESTAMP__: 源文件最后修改时间
+// _WIN32: 编译环境是否为windows
+// __linux__: 编译环境是否为linux
+// __APPLE__: 编译环境是否为苹果系统
+// __GNUC__: 编译器是否为gcc
+// __cpluscplus: C++标准版本

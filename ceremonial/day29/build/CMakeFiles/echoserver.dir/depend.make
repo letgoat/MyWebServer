@@ -14,7 +14,6 @@ CMakeFiles/echoserver.dir/http/HttpRequest.cpp.o: ../http/HttpRequest.h
 CMakeFiles/echoserver.dir/http/HttpResponse.cpp.o: ../http/HttpResponse.cpp
 CMakeFiles/echoserver.dir/http/HttpResponse.cpp.o: ../http/HttpResponse.h
 
-CMakeFiles/echoserver.dir/http/HttpServer.cpp.o: ../base/common.h
 CMakeFiles/echoserver.dir/http/HttpServer.cpp.o: ../log/LogStream.h
 CMakeFiles/echoserver.dir/http/HttpServer.cpp.o: ../log/Logging.h
 CMakeFiles/echoserver.dir/http/HttpServer.cpp.o: ../tcp/Acceptor.h
@@ -23,6 +22,7 @@ CMakeFiles/echoserver.dir/http/HttpServer.cpp.o: ../tcp/EventLoop.h
 CMakeFiles/echoserver.dir/http/HttpServer.cpp.o: ../tcp/TcpConnection.h
 CMakeFiles/echoserver.dir/http/HttpServer.cpp.o: ../tcp/TcpServer.h
 CMakeFiles/echoserver.dir/http/HttpServer.cpp.o: ../timer/TimeStamp.h
+CMakeFiles/echoserver.dir/http/HttpServer.cpp.o: ../base/common.h
 CMakeFiles/echoserver.dir/http/HttpServer.cpp.o: ../http/HttpContext.h
 CMakeFiles/echoserver.dir/http/HttpServer.cpp.o: ../http/HttpRequest.h
 CMakeFiles/echoserver.dir/http/HttpServer.cpp.o: ../http/HttpResponse.h
@@ -37,6 +37,7 @@ CMakeFiles/echoserver.dir/log/AsyncLogging.cpp.o: ../log/AsyncLogging.h
 CMakeFiles/echoserver.dir/log/AsyncLogging.cpp.o: ../log/LogFile.h
 CMakeFiles/echoserver.dir/log/AsyncLogging.cpp.o: ../log/LogStream.h
 CMakeFiles/echoserver.dir/log/AsyncLogging.cpp.o: ../log/Logging.h
+CMakeFiles/echoserver.dir/log/AsyncLogging.cpp.o: ../timer/TimeStamp.h
 
 CMakeFiles/echoserver.dir/log/LogFile.cpp.o: ../timer/TimeStamp.h
 CMakeFiles/echoserver.dir/log/LogFile.cpp.o: ../log/LogFile.cpp
@@ -48,15 +49,15 @@ CMakeFiles/echoserver.dir/log/LogStream.cpp.o: ../log/LogStream.h
 
 CMakeFiles/echoserver.dir/log/Logging.cpp.o: ../base/CurrentThread.h
 CMakeFiles/echoserver.dir/log/Logging.cpp.o: ../base/common.h
-CMakeFiles/echoserver.dir/log/Logging.cpp.o: ../timer/TimeStamp.h
 CMakeFiles/echoserver.dir/log/Logging.cpp.o: ../log/LogStream.h
 CMakeFiles/echoserver.dir/log/Logging.cpp.o: ../log/Logging.cpp
 CMakeFiles/echoserver.dir/log/Logging.cpp.o: ../log/Logging.h
+CMakeFiles/echoserver.dir/log/Logging.cpp.o: ../timer/TimeStamp.h
 
-CMakeFiles/echoserver.dir/tcp/Acceptor.cpp.o: ../base/common.h
 CMakeFiles/echoserver.dir/tcp/Acceptor.cpp.o: ../log/LogStream.h
 CMakeFiles/echoserver.dir/tcp/Acceptor.cpp.o: ../log/Logging.h
 CMakeFiles/echoserver.dir/tcp/Acceptor.cpp.o: ../timer/TimeStamp.h
+CMakeFiles/echoserver.dir/tcp/Acceptor.cpp.o: ../base/common.h
 CMakeFiles/echoserver.dir/tcp/Acceptor.cpp.o: ../tcp/Acceptor.cpp
 CMakeFiles/echoserver.dir/tcp/Acceptor.cpp.o: ../tcp/Acceptor.h
 CMakeFiles/echoserver.dir/tcp/Acceptor.cpp.o: ../tcp/Channel.h
@@ -67,22 +68,23 @@ CMakeFiles/echoserver.dir/tcp/Buffer.cpp.o: ../tcp/Buffer.cpp
 CMakeFiles/echoserver.dir/tcp/Buffer.cpp.o: ../tcp/Buffer.h
 
 CMakeFiles/echoserver.dir/tcp/Channel.cpp.o: ../base/common.h
+CMakeFiles/echoserver.dir/tcp/Channel.cpp.o: ../base/common.h
 CMakeFiles/echoserver.dir/tcp/Channel.cpp.o: ../tcp/Channel.cpp
 CMakeFiles/echoserver.dir/tcp/Channel.cpp.o: ../tcp/Channel.h
 CMakeFiles/echoserver.dir/tcp/Channel.cpp.o: ../tcp/EventLoop.h
 
-CMakeFiles/echoserver.dir/tcp/Epoller.cpp.o: ../base/common.h
 CMakeFiles/echoserver.dir/tcp/Epoller.cpp.o: ../log/LogStream.h
 CMakeFiles/echoserver.dir/tcp/Epoller.cpp.o: ../log/Logging.h
 CMakeFiles/echoserver.dir/tcp/Epoller.cpp.o: ../timer/TimeStamp.h
+CMakeFiles/echoserver.dir/tcp/Epoller.cpp.o: ../base/common.h
 CMakeFiles/echoserver.dir/tcp/Epoller.cpp.o: ../tcp/Channel.h
 CMakeFiles/echoserver.dir/tcp/Epoller.cpp.o: ../tcp/Epoller.cpp
 CMakeFiles/echoserver.dir/tcp/Epoller.cpp.o: ../tcp/Epoller.h
 
 CMakeFiles/echoserver.dir/tcp/EventLoop.cpp.o: ../base/CurrentThread.h
-CMakeFiles/echoserver.dir/tcp/EventLoop.cpp.o: ../base/common.h
 CMakeFiles/echoserver.dir/tcp/EventLoop.cpp.o: ../timer/TimeStamp.h
 CMakeFiles/echoserver.dir/tcp/EventLoop.cpp.o: ../timer/TimerQueue.h
+CMakeFiles/echoserver.dir/tcp/EventLoop.cpp.o: ../base/common.h
 CMakeFiles/echoserver.dir/tcp/EventLoop.cpp.o: ../tcp/Channel.h
 CMakeFiles/echoserver.dir/tcp/EventLoop.cpp.o: ../tcp/Epoller.h
 CMakeFiles/echoserver.dir/tcp/EventLoop.cpp.o: ../tcp/EventLoop.cpp
@@ -104,22 +106,25 @@ CMakeFiles/echoserver.dir/tcp/TcpConnection.cpp.o: ../http/HttpContext.h
 CMakeFiles/echoserver.dir/tcp/TcpConnection.cpp.o: ../log/LogStream.h
 CMakeFiles/echoserver.dir/tcp/TcpConnection.cpp.o: ../log/Logging.h
 CMakeFiles/echoserver.dir/tcp/TcpConnection.cpp.o: ../timer/TimeStamp.h
+CMakeFiles/echoserver.dir/tcp/TcpConnection.cpp.o: ../base/common.h
 CMakeFiles/echoserver.dir/tcp/TcpConnection.cpp.o: ../tcp/Buffer.h
 CMakeFiles/echoserver.dir/tcp/TcpConnection.cpp.o: ../tcp/Channel.h
 CMakeFiles/echoserver.dir/tcp/TcpConnection.cpp.o: ../tcp/EventLoop.h
 CMakeFiles/echoserver.dir/tcp/TcpConnection.cpp.o: ../tcp/TcpConnection.cpp
 CMakeFiles/echoserver.dir/tcp/TcpConnection.cpp.o: ../tcp/TcpConnection.h
+CMakeFiles/echoserver.dir/tcp/TcpConnection.cpp.o: ../timer/TimeStamp.h
 
 CMakeFiles/echoserver.dir/tcp/TcpServer.cpp.o: ../base/common.h
 CMakeFiles/echoserver.dir/tcp/TcpServer.cpp.o: ../log/LogStream.h
 CMakeFiles/echoserver.dir/tcp/TcpServer.cpp.o: ../log/Logging.h
-CMakeFiles/echoserver.dir/tcp/TcpServer.cpp.o: ../timer/TimeStamp.h
+CMakeFiles/echoserver.dir/tcp/TcpServer.cpp.o: ../base/common.h
 CMakeFiles/echoserver.dir/tcp/TcpServer.cpp.o: ../tcp/Acceptor.h
 CMakeFiles/echoserver.dir/tcp/TcpServer.cpp.o: ../tcp/EventLoop.h
 CMakeFiles/echoserver.dir/tcp/TcpServer.cpp.o: ../tcp/EventLoopThreadPool.h
 CMakeFiles/echoserver.dir/tcp/TcpServer.cpp.o: ../tcp/TcpConnection.h
 CMakeFiles/echoserver.dir/tcp/TcpServer.cpp.o: ../tcp/TcpServer.cpp
 CMakeFiles/echoserver.dir/tcp/TcpServer.cpp.o: ../tcp/TcpServer.h
+CMakeFiles/echoserver.dir/tcp/TcpServer.cpp.o: ../timer/TimeStamp.h
 
 CMakeFiles/echoserver.dir/test/echo_server.cpp.o: ../base/common.h
 CMakeFiles/echoserver.dir/test/echo_server.cpp.o: ../tcp/Acceptor.h
@@ -135,9 +140,9 @@ CMakeFiles/echoserver.dir/timer/Timer.cpp.o: ../timer/TimeStamp.h
 CMakeFiles/echoserver.dir/timer/Timer.cpp.o: ../timer/Timer.cpp
 CMakeFiles/echoserver.dir/timer/Timer.cpp.o: ../timer/Timer.h
 
-CMakeFiles/echoserver.dir/timer/TimerQueue.cpp.o: ../base/common.h
 CMakeFiles/echoserver.dir/timer/TimerQueue.cpp.o: ../tcp/Channel.h
 CMakeFiles/echoserver.dir/timer/TimerQueue.cpp.o: ../tcp/EventLoop.h
+CMakeFiles/echoserver.dir/timer/TimerQueue.cpp.o: ../base/common.h
 CMakeFiles/echoserver.dir/timer/TimerQueue.cpp.o: ../timer/TimeStamp.h
 CMakeFiles/echoserver.dir/timer/TimerQueue.cpp.o: ../timer/Timer.h
 CMakeFiles/echoserver.dir/timer/TimerQueue.cpp.o: ../timer/TimerQueue.cpp

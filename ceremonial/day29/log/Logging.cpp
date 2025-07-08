@@ -1,10 +1,10 @@
 #include "Logging.h"
-#include "CurrentThread.h"
+#include "../base/CurrentThread.h"
 #include <utility>
 
 // 为了实现多线程中日志时间格式化的效率，增加了两个__thread变量，
 // 用于缓存当前线程存日期时间字符串、上一次日志记录的秒数
-__thread char t_time[64];		// 当前线程的时间字符串 “年:月:日 时:分:秒”
+__thread char t_time[64];		// 当前线程的时间字符串 "年:月:日 时:分:秒"
 __thread time_t t_lastsecond;	// 当前线程上一次日志记录时的秒数
 
 // 方便一个已知长度的字符串被送入buffer中
@@ -75,7 +75,8 @@ void Logger::Impl::FormattedTime(){
 }
 
 void Logger::Impl::Finish(){
-    stream_ << " - " << sourcefile_.data_ << ":" << line_ << "\n";
+    // 日志格式: [时间][级别][tid][文件:行] message\n
+    stream_ << " - [" << sourcefile_.data_ << ":" << line_ << "]\n";
 }
 
 LogStream &Logger::Impl::stream() { return stream_; }

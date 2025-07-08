@@ -14,7 +14,6 @@ CMakeFiles/test_logstream.dir/http/HttpRequest.cpp.o: ../http/HttpRequest.h
 CMakeFiles/test_logstream.dir/http/HttpResponse.cpp.o: ../http/HttpResponse.cpp
 CMakeFiles/test_logstream.dir/http/HttpResponse.cpp.o: ../http/HttpResponse.h
 
-CMakeFiles/test_logstream.dir/http/HttpServer.cpp.o: ../base/common.h
 CMakeFiles/test_logstream.dir/http/HttpServer.cpp.o: ../log/LogStream.h
 CMakeFiles/test_logstream.dir/http/HttpServer.cpp.o: ../log/Logging.h
 CMakeFiles/test_logstream.dir/http/HttpServer.cpp.o: ../tcp/Acceptor.h
@@ -23,6 +22,7 @@ CMakeFiles/test_logstream.dir/http/HttpServer.cpp.o: ../tcp/EventLoop.h
 CMakeFiles/test_logstream.dir/http/HttpServer.cpp.o: ../tcp/TcpConnection.h
 CMakeFiles/test_logstream.dir/http/HttpServer.cpp.o: ../tcp/TcpServer.h
 CMakeFiles/test_logstream.dir/http/HttpServer.cpp.o: ../timer/TimeStamp.h
+CMakeFiles/test_logstream.dir/http/HttpServer.cpp.o: ../base/common.h
 CMakeFiles/test_logstream.dir/http/HttpServer.cpp.o: ../http/HttpContext.h
 CMakeFiles/test_logstream.dir/http/HttpServer.cpp.o: ../http/HttpRequest.h
 CMakeFiles/test_logstream.dir/http/HttpServer.cpp.o: ../http/HttpResponse.h
@@ -37,6 +37,7 @@ CMakeFiles/test_logstream.dir/log/AsyncLogging.cpp.o: ../log/AsyncLogging.h
 CMakeFiles/test_logstream.dir/log/AsyncLogging.cpp.o: ../log/LogFile.h
 CMakeFiles/test_logstream.dir/log/AsyncLogging.cpp.o: ../log/LogStream.h
 CMakeFiles/test_logstream.dir/log/AsyncLogging.cpp.o: ../log/Logging.h
+CMakeFiles/test_logstream.dir/log/AsyncLogging.cpp.o: ../timer/TimeStamp.h
 
 CMakeFiles/test_logstream.dir/log/LogFile.cpp.o: ../timer/TimeStamp.h
 CMakeFiles/test_logstream.dir/log/LogFile.cpp.o: ../log/LogFile.cpp
@@ -48,15 +49,15 @@ CMakeFiles/test_logstream.dir/log/LogStream.cpp.o: ../log/LogStream.h
 
 CMakeFiles/test_logstream.dir/log/Logging.cpp.o: ../base/CurrentThread.h
 CMakeFiles/test_logstream.dir/log/Logging.cpp.o: ../base/common.h
-CMakeFiles/test_logstream.dir/log/Logging.cpp.o: ../timer/TimeStamp.h
 CMakeFiles/test_logstream.dir/log/Logging.cpp.o: ../log/LogStream.h
 CMakeFiles/test_logstream.dir/log/Logging.cpp.o: ../log/Logging.cpp
 CMakeFiles/test_logstream.dir/log/Logging.cpp.o: ../log/Logging.h
+CMakeFiles/test_logstream.dir/log/Logging.cpp.o: ../timer/TimeStamp.h
 
-CMakeFiles/test_logstream.dir/tcp/Acceptor.cpp.o: ../base/common.h
 CMakeFiles/test_logstream.dir/tcp/Acceptor.cpp.o: ../log/LogStream.h
 CMakeFiles/test_logstream.dir/tcp/Acceptor.cpp.o: ../log/Logging.h
 CMakeFiles/test_logstream.dir/tcp/Acceptor.cpp.o: ../timer/TimeStamp.h
+CMakeFiles/test_logstream.dir/tcp/Acceptor.cpp.o: ../base/common.h
 CMakeFiles/test_logstream.dir/tcp/Acceptor.cpp.o: ../tcp/Acceptor.cpp
 CMakeFiles/test_logstream.dir/tcp/Acceptor.cpp.o: ../tcp/Acceptor.h
 CMakeFiles/test_logstream.dir/tcp/Acceptor.cpp.o: ../tcp/Channel.h
@@ -67,22 +68,23 @@ CMakeFiles/test_logstream.dir/tcp/Buffer.cpp.o: ../tcp/Buffer.cpp
 CMakeFiles/test_logstream.dir/tcp/Buffer.cpp.o: ../tcp/Buffer.h
 
 CMakeFiles/test_logstream.dir/tcp/Channel.cpp.o: ../base/common.h
+CMakeFiles/test_logstream.dir/tcp/Channel.cpp.o: ../base/common.h
 CMakeFiles/test_logstream.dir/tcp/Channel.cpp.o: ../tcp/Channel.cpp
 CMakeFiles/test_logstream.dir/tcp/Channel.cpp.o: ../tcp/Channel.h
 CMakeFiles/test_logstream.dir/tcp/Channel.cpp.o: ../tcp/EventLoop.h
 
-CMakeFiles/test_logstream.dir/tcp/Epoller.cpp.o: ../base/common.h
 CMakeFiles/test_logstream.dir/tcp/Epoller.cpp.o: ../log/LogStream.h
 CMakeFiles/test_logstream.dir/tcp/Epoller.cpp.o: ../log/Logging.h
 CMakeFiles/test_logstream.dir/tcp/Epoller.cpp.o: ../timer/TimeStamp.h
+CMakeFiles/test_logstream.dir/tcp/Epoller.cpp.o: ../base/common.h
 CMakeFiles/test_logstream.dir/tcp/Epoller.cpp.o: ../tcp/Channel.h
 CMakeFiles/test_logstream.dir/tcp/Epoller.cpp.o: ../tcp/Epoller.cpp
 CMakeFiles/test_logstream.dir/tcp/Epoller.cpp.o: ../tcp/Epoller.h
 
 CMakeFiles/test_logstream.dir/tcp/EventLoop.cpp.o: ../base/CurrentThread.h
-CMakeFiles/test_logstream.dir/tcp/EventLoop.cpp.o: ../base/common.h
 CMakeFiles/test_logstream.dir/tcp/EventLoop.cpp.o: ../timer/TimeStamp.h
 CMakeFiles/test_logstream.dir/tcp/EventLoop.cpp.o: ../timer/TimerQueue.h
+CMakeFiles/test_logstream.dir/tcp/EventLoop.cpp.o: ../base/common.h
 CMakeFiles/test_logstream.dir/tcp/EventLoop.cpp.o: ../tcp/Channel.h
 CMakeFiles/test_logstream.dir/tcp/EventLoop.cpp.o: ../tcp/Epoller.h
 CMakeFiles/test_logstream.dir/tcp/EventLoop.cpp.o: ../tcp/EventLoop.cpp
@@ -104,22 +106,25 @@ CMakeFiles/test_logstream.dir/tcp/TcpConnection.cpp.o: ../http/HttpContext.h
 CMakeFiles/test_logstream.dir/tcp/TcpConnection.cpp.o: ../log/LogStream.h
 CMakeFiles/test_logstream.dir/tcp/TcpConnection.cpp.o: ../log/Logging.h
 CMakeFiles/test_logstream.dir/tcp/TcpConnection.cpp.o: ../timer/TimeStamp.h
+CMakeFiles/test_logstream.dir/tcp/TcpConnection.cpp.o: ../base/common.h
 CMakeFiles/test_logstream.dir/tcp/TcpConnection.cpp.o: ../tcp/Buffer.h
 CMakeFiles/test_logstream.dir/tcp/TcpConnection.cpp.o: ../tcp/Channel.h
 CMakeFiles/test_logstream.dir/tcp/TcpConnection.cpp.o: ../tcp/EventLoop.h
 CMakeFiles/test_logstream.dir/tcp/TcpConnection.cpp.o: ../tcp/TcpConnection.cpp
 CMakeFiles/test_logstream.dir/tcp/TcpConnection.cpp.o: ../tcp/TcpConnection.h
+CMakeFiles/test_logstream.dir/tcp/TcpConnection.cpp.o: ../timer/TimeStamp.h
 
 CMakeFiles/test_logstream.dir/tcp/TcpServer.cpp.o: ../base/common.h
 CMakeFiles/test_logstream.dir/tcp/TcpServer.cpp.o: ../log/LogStream.h
 CMakeFiles/test_logstream.dir/tcp/TcpServer.cpp.o: ../log/Logging.h
-CMakeFiles/test_logstream.dir/tcp/TcpServer.cpp.o: ../timer/TimeStamp.h
+CMakeFiles/test_logstream.dir/tcp/TcpServer.cpp.o: ../base/common.h
 CMakeFiles/test_logstream.dir/tcp/TcpServer.cpp.o: ../tcp/Acceptor.h
 CMakeFiles/test_logstream.dir/tcp/TcpServer.cpp.o: ../tcp/EventLoop.h
 CMakeFiles/test_logstream.dir/tcp/TcpServer.cpp.o: ../tcp/EventLoopThreadPool.h
 CMakeFiles/test_logstream.dir/tcp/TcpServer.cpp.o: ../tcp/TcpConnection.h
 CMakeFiles/test_logstream.dir/tcp/TcpServer.cpp.o: ../tcp/TcpServer.cpp
 CMakeFiles/test_logstream.dir/tcp/TcpServer.cpp.o: ../tcp/TcpServer.h
+CMakeFiles/test_logstream.dir/tcp/TcpServer.cpp.o: ../timer/TimeStamp.h
 
 CMakeFiles/test_logstream.dir/test/test_logstream.cpp.o: ../base/common.h
 CMakeFiles/test_logstream.dir/test/test_logstream.cpp.o: ../log/LogStream.h
@@ -130,9 +135,9 @@ CMakeFiles/test_logstream.dir/timer/Timer.cpp.o: ../timer/TimeStamp.h
 CMakeFiles/test_logstream.dir/timer/Timer.cpp.o: ../timer/Timer.cpp
 CMakeFiles/test_logstream.dir/timer/Timer.cpp.o: ../timer/Timer.h
 
-CMakeFiles/test_logstream.dir/timer/TimerQueue.cpp.o: ../base/common.h
 CMakeFiles/test_logstream.dir/timer/TimerQueue.cpp.o: ../tcp/Channel.h
 CMakeFiles/test_logstream.dir/timer/TimerQueue.cpp.o: ../tcp/EventLoop.h
+CMakeFiles/test_logstream.dir/timer/TimerQueue.cpp.o: ../base/common.h
 CMakeFiles/test_logstream.dir/timer/TimerQueue.cpp.o: ../timer/TimeStamp.h
 CMakeFiles/test_logstream.dir/timer/TimerQueue.cpp.o: ../timer/Timer.h
 CMakeFiles/test_logstream.dir/timer/TimerQueue.cpp.o: ../timer/TimerQueue.cpp

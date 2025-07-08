@@ -1,9 +1,10 @@
-
 #include<iostream>
 #include<string>
-#include "HttpContext.h"
-#include "HttpRequest.h"
+#include "../http/HttpContext.h"
+#include "../http/HttpRequest.h"
 #include <map>
+#include <cassert>
+
 int main(){
 
     HttpContext *context = new HttpContext();
@@ -29,6 +30,14 @@ int main(){
 	//std::cout << str.size() << std::endl;
     context->ParaseRequest(str.c_str(), str.size());
     HttpRequest * request = context->request();
+
+    assert(request->GetMethodString() == "GET");
+    assert(request->url() == "/hello");
+    assert(request->protocol() == "HTTP");
+    assert(request->GetVersionString() == "1.1");
+    assert(request->request_params().at("a") == "2");
+    assert(request->headers().at("Host") == "127.0.0.1:1234");
+    // 可根据需要添加更多断言
 
     std::cout << "method: " << request->GetMethodString() << std::endl << std::endl;
     std::cout << "url: " << request->url() << std::endl << std::endl;

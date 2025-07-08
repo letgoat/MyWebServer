@@ -1,10 +1,10 @@
 #pragma once
-#include "common.h"
+#include "../base/common.h"
 
 #include <functional>
 #include <memory>
 #include <string>
-#include "TimeStamp.h"
+#include "../timer/TimeStamp.h"
 class Buffer;
 class HttpContext;
 class TcpConnection : public std::enable_shared_from_this<TcpConnection>

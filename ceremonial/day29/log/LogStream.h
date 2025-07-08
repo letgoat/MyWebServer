@@ -1,5 +1,4 @@
-
-#include "common.h"
+#include "../base/common.h"
 #include <string>
 #include <algorithm>
 #include <cstring>
@@ -76,27 +75,29 @@ private:
     Buffer buffer_;
 };
 
-
+//将任意类型的整数值格式化为字符串，并存储到LogStream的缓存区
 template<typename T>
 void LogStream::formatInteger(T value){
     if(buffer_.avail() >= kMaxNumericSize){
         char *buf = buffer_.current();
         char *now = buf;
 
+        if (value < 0){
+            *(now++) = '-';
+        }
         do {
             int remainder = value % 10;
             *(now++) = remainder + '0';
             value /= 10;
         } while (value != 0);
-        if (value < 0){
-            *(now++) = '-';
-        }
+        
         std::reverse(buf, now);
         buffer_.add(now - buf);
     }
 };
 
 
+// 定义一个类Fmt,将算术类型的数据按照指定的格式化规则转换为字符串，并提供格式化后的字符串及其长度的接口
 class Fmt{
     public:
         template <typename T>

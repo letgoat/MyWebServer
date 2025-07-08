@@ -1,5 +1,5 @@
 #pragma once
-#include "common.h"
+#include "../base/common.h"
 #include <thread>
 #include <condition_variable>
 class Latch
@@ -13,6 +13,7 @@ public:
     DISALLOW_COPY_AND_MOVE(Latch);
 
     explicit Latch(int count) : count_(count){}
+    
     void wait(){
         std::unique_lock<std::mutex> lock(mux_);
         while(count_ > 0){

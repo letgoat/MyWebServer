@@ -4,7 +4,7 @@
 #include <vector>
 #include <string>
 #include <cstring>
-#include "common.h"
+#include "../base/common.h"
 
 static const int kPrePendIndex = 8; // prependindex长度
 static const int kInitalSize = 1024; // 初始化开辟空间长度
